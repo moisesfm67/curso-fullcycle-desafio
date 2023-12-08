@@ -1,0 +1,26 @@
+### Criar um novo Asset
+POST http://localhost:3000/api/assets
+Content-Type: application/json
+
+{
+  "id": "asset-001",
+  "symbol": "AAPL"
+}
+
+### Listar todos os Assets
+GET http://localhost:3000/api/assets
+
+
+### Criar uma nova Order
+POST http://localhost:3000/api/orders
+Content-Type: application/json
+
+{
+  "asset_id": "asset-001",
+  "price": 150.00,
+  "status": "OPEN"
+}
+
+### Listar todas as Orders
+GET http://localhost:3000/api/orders
+
